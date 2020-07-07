@@ -5,16 +5,16 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server  --mode development --devtool inline-source-map --hot",
-    "build": "webpack --mode production",
-    "start": "node www.js"
+    "clean": "rimraf build ./build/*",
+    "build": "npm run clean && webpack --mode production",
+    "start": "webpack --mode production && node www.js"
   },
-  "author": "leinov",
-  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/plugin-proposal-class-properties": "^7.2.1",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
+    "babel-core": "^6.26.3",
     "babel-loader": "^8.0.4",
     "babel-preset-react": "^6.24.1",
     "clean-webpack-plugin": "^0.1.19",
@@ -27,21 +27,29 @@
     "node-sass": "^4.9.3",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss-loader": "^3.0.0",
+    "react-hot-loader": "^4.12.21",
+    "react-scripts": "^3.4.1",
+    "rimraf": "^2.7.1",
     "sass-loader": "^7.1.0",
+    "source-map-loader": "^1.0.1",
     "style-loader": "^0.23.0",
     "uglifyjs-webpack-plugin": "^2.0.1",
     "url-loader": "^1.1.1",
-    "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.9"
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-middleware": "^3.7.2",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-hot-middleware": "^2.25.0"
   },
   "dependencies": {
+    "babel-eslint": "^10.1.0",
     "bulma": "^0.7.1",
-    "express": "^4.16.3",
+    "express": "^4.17.1",
     "opn": "^5.4.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-redux": "^6.0.0",
+    "reactstrap": "^8.4.1",
     "redux": "^4.0.1"
   }
 }
