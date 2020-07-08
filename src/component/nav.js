@@ -2,6 +2,7 @@
 import React, { Component } from "react";
 import "./nav.scss";
 import logo from "src/pages/react-multi.png"
+
 export default class Nav extends Component {
 
 	render() {
@@ -11,6 +12,8 @@ export default class Nav extends Component {
 				<div className="columns column nav is-8">
 					<div className="nav-item"><a href= "/">Home</a></div>
 					<div className="nav-item"><a href= "/todo">Todo</a></div>
+					<div className="nav-item"><a href= "/datalist">DataList</a></div>
+					<div className="nav-item"><a href= "/CpMap">CP Map</a></div>
 					<div className="nav-item"><a href= "https://github.com/leinov/webpack-react-multi-page/">Github</a></div>
 				</div>
 				<div className="column is-2"></div>

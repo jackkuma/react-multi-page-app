@@ -1,0 +1,37 @@
+@import "src/base.scss";
+
+.header-component {
+  background-color: #b418bf;
+  min-height: 72px;
+  flex: 0 0 auto;
+  z-index: 1;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  .header-title {
+    background-color: #920d9b;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    width: 25%;
+    min-width: 300px;
+    padding: 6px;
+    >i {
+      background-color: rgba(0, 0, 0, 0.24);
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+    }
+    h6 {
+      color: #fff;
+      margin: 0 8px;
+    }
+    .dx-toolbar-item.menu-button>.dx-toolbar-item-content .dx-icon {
+      color: $base-accent;
+    }
+  }
+}
+
+.dx-toolbar-item.dx-toolbar-button.menu-button {
+  text-align: center;
+  padding: 0;
+  float: right;
+}
